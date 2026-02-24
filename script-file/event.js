@@ -14,6 +14,7 @@ mainContainer.addEventListener("click", function (event) {
     const parentNode = event.target.parentNode.parentNode;
     const titleName = parentNode.querySelector(".title-name").innerText;
     const subTitle = parentNode.querySelector(".sub-title").innerText;
+    const location = parentNode.querySelector(".location").innerText;
     const salary = parentNode.querySelector(".salary").innerText;
     const comment = parentNode.querySelector(".comment").innerText;
     const statusBtn = parentNode.querySelector(".status-bar").innerText;
@@ -21,6 +22,7 @@ mainContainer.addEventListener("click", function (event) {
     const cardInfo = {
       titleName,
       subTitle,
+      location,
       salary,
       comment,
       statusBtn
@@ -45,6 +47,7 @@ mainContainer.addEventListener("click", function (event) {
     const parentNode = event.target.parentNode.parentNode;
     const titleName = parentNode.querySelector(".title-name").innerText;
     const subTitle = parentNode.querySelector(".sub-title").innerText;
+    const location = parentNode.querySelector(".location").innerText;
     const salary = parentNode.querySelector(".salary").innerText;
     const comment = parentNode.querySelector(".comment").innerText;
     const statusBtn = parentNode.querySelector(".status-bar").innerText;
@@ -52,6 +55,7 @@ mainContainer.addEventListener("click", function (event) {
     const cardInfo = {
       titleName,
       subTitle,
+      location,
       salary,
       comment,
       statusBtn
@@ -86,6 +90,7 @@ function renderInterview() {
     <div class="space-y-1">
           <h3 class=" title-name text-xl font-bold">${interview.titleName}</h3>
           <p class="text-lg">${interview.subTitle}</p>
+          <p class="location">${interview.location}</p>
           <p class="text-sm my-5">${interview.salary}</p>
           <span class="status-bar border border-accent text-accent p-2 rounded-md ">Interview</span>
           <p class="my-4">${interview.comment}</p>
@@ -112,6 +117,7 @@ function renderRejected() {
     <div class="space-y-1">
           <h3 class=" title-name text-xl font-bold">${interview.titleName}</h3>
           <p class="text-lg">${interview.subTitle}</p>
+          <p class="location">${interview.location}</p>
           <p class="text-sm my-5">${interview.salary}</p>
           <span class="status-bar border border-error text-error p-2 rounded-md ">Rejected</span>
           <p class="my-4">${interview.comment}</p>
