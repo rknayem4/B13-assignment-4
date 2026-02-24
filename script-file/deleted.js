@@ -5,6 +5,7 @@ document.addEventListener("click", function (event) {
     const card = event.target.closest(".job-card");
 
     card.remove(); 
+    countSet()
   }
 });
 
